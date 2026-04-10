@@ -1,0 +1,8 @@
+#Keeps adding the digits of a number together repeatedly until only a single digit remains
+
+number = int(input("Enter a number: "))
+
+while number >= 10:
+    number = sum(int(d) for d in str(number))  # Convert the number to a string, iterate over each character (digit), convert it back to an integer, and sum them up
+
+print("Digital root:", number)
